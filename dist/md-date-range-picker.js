@@ -318,6 +318,7 @@
             if ([undefined, null, '', NaN].indexOf($scope.firstDayOfWeek) !== -1) {
                 return START_OF_WEEK;
             }
+            $scope.firstDayOfWeek = parseInt($scope.firstDayOfWeek);
             return $scope.firstDayOfWeek;
         }
         /**
